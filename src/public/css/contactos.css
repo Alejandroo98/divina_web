@@ -1,0 +1,28 @@
+.__mainContainer {
+  background-color: tomato;
+  height: calc(100vh - 56px);
+}
+
+.__contentContainer {
+  display: flex;
+  justify-content: center;
+  background-color: thistle;
+  text-align: center;
+  height: 100%;
+}
+
+.__contentContainer > div {
+  padding: 30px;
+  width: 500px;
+  margin: 30px;
+  background-color: tomato;
+}
+
+.__contentContainer input,
+.__contentContainer textarea {
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  height: 40px;
+}

@@ -1,0 +1,17 @@
+footer {
+  background-color: brown;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer > div {
+  margin: 15px 15px;
+}
