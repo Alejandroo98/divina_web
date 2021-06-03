@@ -1,0 +1,20 @@
+.__redesSocialesContainer {
+  position: absolute;
+  top: 220px;
+  left: 12px;
+  /* background-color: violet; */
+  z-index: 500;
+}
+
+.__redesSocialesContainer > div {
+  transition: all 0.2s;
+  transition-timing-function: ease-in;
+  margin: 8px 0;
+}
+.__redesSocialesContainer > div:hover {
+  transform: scale(1.1);
+}
+
+.__redesSocialesContainer img {
+  max-width: 28px;
+}

@@ -10,20 +10,52 @@
       integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x'
       crossorigin='anonymous'
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='./css/index.css' />
     <link rel='stylesheet' href='../css/footer.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/redesSociales.css">
   </head>
   <body>
+
+    {{> redesSociales }}
 
     <main class="__mainContainer">
       {{> nav }}
 
       <section class="__presentacionMain">
-        <div>
-          <h1>Cera depilatoria</h1>
+        <div class="__infomain">
+          <div>
+            <h1>CERA DEPILATORIA</h1>
+            <p>CORPORAL - FACIAL</p>
+          </div>
+          <div class="__buttonsMain"> 
+            
+            <div>
+              <button>COMPRAR</button>
+            </div>
+            
+            <div>
+              <button>CONTACTOS</button>
+            </div>
+            
+          </div>
+
+          <div class="__enviosPais">
+            <span>Envios a todo el pais</span>
+            <span class="material-icons">local_shipping</span>
+            
+          </div>
+          
         </div>
-        <div>
-          <img src="https://www.magu.ec/wp-content/uploads/2019/02/image551.png" alt="">
+        <div class="__lataContainer">
+          <div class="__newContainer">
+            <h3>NUEVO</h3>
+          </div>
+          <div>
+            <img src="./img/index/lata6.png" alt="">
+          </div>
         </div>
       </section>
     </main>

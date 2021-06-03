@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 html,
 body {
-  background-color: aqua !important;
+  /* background-color: aqua !important; */
   position: relative;
 }
 
+.navbar {
+  top: 80px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 0 200px;
+  /* background: red !important; */
+  background: none !important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
 .__mainContainer {
+  position: relative;
   background-color: tomato;
-  height: calc(100vh - 56px);
+  height: 100%;
+  /* height: calc(100vh - 56px); */
+  background: rgb(51, 51, 51);
+  background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  /* background-size: cover; */
 }
 
 .__presentacionMain {
@@ -14,22 +35,76 @@ body {
   justify-content: center;
   justify-items: center;
   box-sizing: border-box;
-  background-color: violet;
+  /* background-color: violet; */
   height: 100%;
   overflow: hidden;
 }
 
-.__presentacionMain > div {
+.__infomain {
+  margin-top: -100px;
+}
+
+.__presentacionMain P {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 14px;
+}
+.__presentacionMain h1 {
+  letter-spacing: 25px;
+  color: rgb(132, 248, 138);
+  font-size: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.__enviosPais {
   display: flex;
+  margin-top: 8px;
   justify-content: center;
   align-items: center;
-  background-color: teal;
-  width: 42%;
+  text-align: center;
+  color: rgb(194, 194, 194);
+}
+
+.__enviosPais > span {
+  margin: 0 5px;
+}
+
+.__presentacionMain > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32%;
 }
 
 .__presentacionMain img {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
+  /* background-color: tomato; */
+}
+
+.__lataContainer {
+  position: relative;
+}
+
+.__newContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+  right: 150px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(202, 255, 191);
+  position: absolute;
+}
+
+.__newContainer h3 {
+  margin-top: 8px;
+  margin-left: 3px;
+  letter-spacing: 5px;
+  font-size: 18px;
 }
 
 .__contentContainer {
@@ -46,4 +121,30 @@ body {
   padding: 25px;
   max-width: 70%;
   background-color: violet;
+}
+
+.__buttonsMain {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+}
+
+.__buttonsMain button {
+  font-size: 20px;
+  margin: 0 10px;
+  border: 0;
+  padding: 1px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.__buttonsMain :first-child button {
+  background-color: rgb(135, 216, 135);
+  border: 3px solid rgb(135, 216, 135);
+}
+
+.__buttonsMain :last-child button {
+  border: 3px solid white;
+  background: none;
+  color: white;
 }
