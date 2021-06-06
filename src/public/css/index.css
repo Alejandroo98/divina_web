@@ -96,7 +96,7 @@ body {
   border-radius: 100px;
   width: 100px;
   height: 100px;
-  background-color: rgb(202, 255, 191);
+  /* background-color: rgb(202, 255, 191); */
   position: absolute;
 }
 
@@ -110,17 +110,15 @@ body {
 .__contentContainer {
   position: relative;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
   /* max-width: 80%; */
-  background-color: yellowgreen;
-  margin-top: 56px;
-  padding-bottom: 56px;
+  padding: 150px 0;
 }
 
 .__contentContainer > div {
-  padding: 25px;
   max-width: 70%;
-  background-color: violet;
 }
 
 .__buttonsMain {
@@ -143,8 +141,56 @@ body {
   border: 3px solid rgb(135, 216, 135);
 }
 
+.__buttonsMain :first-child button:hover {
+  background-color: rgb(110, 226, 110);
+  border: 3px solid rgb(120, 219, 120);
+}
+
 .__buttonsMain :last-child button {
   border: 3px solid white;
   background: none;
   color: white;
 }
+
+.__buttonsMain :last-child button:hover {
+  border: 3px solid rgb(204, 204, 204);
+  color: rgb(204, 204, 204);
+  background: none;
+}
+
+/* ===== PRESENTACIONES LATAS  ===== */
+
+.__presentacionLataContainer {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.__presentacionLataContainer img {
+  max-height: 400px;
+}
+
+.__presentacionLataContainer a {
+  text-decoration: none;
+  background-color: rgb(29, 29, 29);
+  border-radius: 25px;
+  color: white;
+  padding: 5px 10px;
+}
+
+table {
+  max-width: 400px;
+}
+
+table td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+table th {
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===== *FIN PRESENTACIONES LATAS  ===== */

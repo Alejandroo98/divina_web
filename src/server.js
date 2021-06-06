@@ -6,6 +6,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 const hbs = require('hbs');
+const { appendFileSync } = require('fs');
 
 //PASSPORT
 require('./lib/passport');

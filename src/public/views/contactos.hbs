@@ -10,35 +10,66 @@
       crossorigin='anonymous'
     />
     <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Document</title>
   </head>
   <body>
-     <main class="__mainContainer">
     {{> nav }}
-      <section class="__contentContainer">
-        <div>
-          <form >
+    <section class="__mesajeContainer ">
+
+      
+
+    {{#if success}}
+      <div class="succes">
+        <p>{{success}}</p>
+      </div>
+    {{/if}}
+      
+    {{#if err}}
+      <div class="error">
+        <p>{{ err }}</p>
+      </div>
+    {{/if}}
+
+   
+
+    
+    </section>
+     <main class="__mainContainer">
+        <section class="__contentContainer">
+          <div class="inputsForm">
             <div>
-              <input type="email" placeholder="Nombre">
+              <h4>Envia un mensaje</h4>
             </div>
-            <div>
-              <input type="email" placeholder="Email">
+              <div>
+                <form method="POST">
+                  <div>
+                    <label for="name">Nombres</label>
+                    <input type="text" name="nombres">
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" >
+                  </div>
+                  <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                  </div>
+                  <div align="center" class="botonContacto" >
+                    <button type="submit">Enviar mensaje</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div>
-              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <div class="nameForm" >
+              <h1>INFORMACION <br> DE CONTACTO </h1>
+              <p>info@divinaec.com</p>
+              <p>0989131502 </p>
             </div>
-          </form>
-        </div>
-        <div>
-          <div>
-          <h1>google direccion</h1>
-          </div>
-          <div>
-            <h1>telefono e email</h1>
-          </div>
-        </div>
-      </section>
+        </section>
+    {{> footer }}
     </main>
+
       
   </body>
 </html>

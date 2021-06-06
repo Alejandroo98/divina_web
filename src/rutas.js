@@ -5,6 +5,7 @@ const Admin = require('./models/admin');
 const passport = require('passport');
 const { isNotLoggedIn, isLoggedIn } = require('./lib/auth');
 const { encryptPassword } = require('./lib/helpers');
+const Email = require('./models/email');
 
 /* RUTA DE LOS VIEWS */
 app.set('views', path.resolve(__dirname, 'public'));
@@ -17,6 +18,42 @@ app.get('/', (req, res) => {
 /* CONTACTOS */
 app.get('/contactos', (req, res) => {
   res.render('views/contactos.hbs');
+});
+
+app.post('/contactos', (req, res) => {
+  const { nombres, email, mensaje } = JSON.parse(JSON.stringify(req.body));
+  const date = new Date();
+  const fechaMensaje = `${date.getHours()}:${date.getMinutes()} | ${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} `;
+
+  if (nombres === '' || email === '' || mensaje === '') {
+    req.flash('err', 'Llena todos los campos');
+    res.redirect('back');
+    return;
+  }
+
+  const emailSave = new Email({
+    nombres,
+    email,
+    mensaje,
+    fechaMensaje,
+  });
+
+  emailSave.save((err, email) => {
+    if (err) {
+      req.flash('err', 'A ocurrido un error, intenta mas tarde');
+      console.log('err');
+      return;
+    }
+
+    if (!email) {
+      req.flash('err', 'A ocurrido un error, intenta mas tarde');
+      console.log('email');
+
+      return;
+    }
+  });
+  req.flash('success', 'Mensaje enviado');
+  res.redirect('back');
 });
 
 /* LOGIN ADMIN */
