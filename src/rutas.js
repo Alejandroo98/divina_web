@@ -62,16 +62,16 @@ app.get('/admin/login', isNotLoggedIn, (req, res) => {
 });
 
 app.post('/admin/login', (req, res, next) => {
-  const { email, password } = req.body; //para guardar un usuario nuevo
-  guardarAdmin(email, password); //para guardar un usuario nuevo
-  res.redirect('back'); //para guardar un usuario nuevo
-  //   const { email, password } = req.body;
-  //   if (email === '' || password === '') {
-  //     req.flash('err', '¡Llena los campos!');
-  //     res.redirect('back');
-  //     return;
-  //   }
-  //   passport.authenticate('local_signin', { successRedirect: '/admin/admin', failureRedirect: '/admin/login', failureFlash: true })(req, res, next);
+  // const { email, password } = req.body; //para guardar un usuario nuevo
+  // guardarAdmin(email, password); //para guardar un usuario nuevo
+  // res.redirect('back');//para guardar un usuario nuevo
+  const { email, password } = req.body;
+  if (email === '' || password === '') {
+    req.flash('err', '¡Llena los campos!');
+    res.redirect('back');
+    return;
+  }
+  passport.authenticate('local_signin', { successRedirect: '/admin/admin', failureRedirect: '/admin/login', failureFlash: true })(req, res, next);
 });
 
 const guardarAdmin = async (email, password) => {
