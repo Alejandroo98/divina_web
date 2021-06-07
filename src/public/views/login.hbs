@@ -10,32 +10,44 @@
       crossorigin='anonymous'
     />
     <title>Document</title>
+    <link rel='stylesheet' href='../css/login.css' />
   </head>
   <body>
+    <div class='logoDivina'>
+      <a href='/'>
+        <img src='../img/logo_Mesa de trabajo 1.svg' width='100' alt='Logo-Divina' />
+      </a>
+    </div>
     <div>
-      {{#if err}}
-        <div><p>{{err}}</p></div>
-      {{/if}}
-
-      {{#if success}}
-        <div><p>{{success}}</p></div>
-      {{/if}}
 
     </div>
-    <nav></nav>
     <main>
       <form method='POST'>
-        <div>
-          <label for='email'>Email</label>
-          <input type='text' id='email' name='email' />
-        </div>
-        <div>
-          <label for='password'>Password</label>
-          <input type='text' id='password' name='password' />
-        </div>
-        <div>
-          <button type='submit'>Login</button>
+        <div class='errSuccessLogin'>
+          {{#if err}}
+            <p>{{err}}</p>
+          {{/if}}
 
+          {{#if success}}
+            <p>{{success}}</p>
+          {{/if}}
+        </div>
+
+        <div class='loginInfo'>
+          <div>
+            <h5>ADMINISTRADOR</h5>
+          </div>
+          <div>
+            <label for='email'>Email</label>
+            <input type='text' id='email' name='email' />
+          </div>
+          <div>
+            <label for='password'>Password</label>
+            <input type='password' id='password' name='password' />
+          </div>
+          <div>
+            <button type='submit'>Login</button>
+          </div>
         </div>
       </form>
     </main>

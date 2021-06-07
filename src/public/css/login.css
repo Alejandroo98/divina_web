@@ -1,0 +1,73 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 203, 203);
+  height: 100vh;
+}
+
+form {
+  width: 500px;
+  background-color: white;
+  box-shadow: -2px 2px 3px rgb(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: rgb(122, 122, 122);
+}
+
+button {
+  margin: 0;
+  width: 100%;
+  border: none;
+  padding: 5px 15px;
+  background-color: rgb(248, 71, 71);
+  color: white;
+}
+h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(95, 95, 95);
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.logoDivina {
+  padding: 10px 50px;
+  background-color: rgb(248, 71, 71);
+}
+
+.logoDivina::after {
+  content: '| Admin';
+  color: white;
+}
+
+.errSuccessLogin {
+  background-color: rgb(248, 71, 71);
+  width: 100%;
+}
+
+.errSuccessLogin p {
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.loginInfo {
+  padding: 30px 20px;
+}

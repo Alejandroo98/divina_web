@@ -11,19 +11,17 @@ passport.use(
       passReqToCallback: true,
     },
     async (req, email, password, done) => {
-      const user = await Admin.find({ email: email });
-      if (user) {
+      const user = await Admin.find({ email: email.trim() });
+      if (user.length > 0) {
+        console.log(user.length, '==================aqui');
         const validPassword = await matchPassword(password, user[0].password);
         if (validPassword) {
           done(null, user, req.flash('success', 'Welcome', user.email));
-          //   console.log('welcome');
         } else {
-          done(null, false, req.flash('message', 'Contraseña incorrecta'));
-          //   console.log('pass');
+          done(null, false, req.flash('err', 'Email o contraseña icorrectos'));
         }
       } else {
-        // console.log('no existe');
-        return done(null, false, req.flash('message', 'El usuario  no existe'));
+        return done(null, false, req.flash('err', 'Email o contraseña icorrectos'));
       }
     }
   )
