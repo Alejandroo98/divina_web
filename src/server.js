@@ -6,7 +6,8 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 const hbs = require('hbs');
-const { appendFileSync } = require('fs');
+
+require('./config/config');
 
 //PASSPORT
 require('./lib/passport');
@@ -55,6 +56,6 @@ mg.connect('mongodb://localhost:27017/divina', { useNewUrlParser: true, useUnifi
 });
 
 //SERVIDOR
-app.listen(3000, () => {
-  console.log('Servidor en puerto 3000');
+app.listen(process.env.PORT, () => {
+  console.log('Servidor en puerto', process.env.PORT);
 });
