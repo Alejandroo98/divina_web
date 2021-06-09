@@ -50,7 +50,7 @@ app.use(require('./rutas'));
 app.use(express.static(path.resolve(__dirname, './public')));
 
 //DB
-mg.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err, res) => {
+mg.connect(process.env.URLDB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err, res) => {
   if (err) throw err;
   console.log('Data base is alive in port ', 3000);
 });

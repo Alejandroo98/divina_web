@@ -18,3 +18,14 @@
 .__redesSocialesContainer img {
   max-width: 28px;
 }
+
+@media screen and (max-width: 840px) {
+  .__redesSocialesContainer {
+    position: absolute;
+    top: 500px;
+    /* bottom: 10px; */
+    left: 12px;
+    /* background-color: violet; */
+    z-index: 500;
+  }
+}

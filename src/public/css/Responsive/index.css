@@ -1,0 +1,109 @@
+@media screen and (max-width: 840px) {
+  .navbar {
+    /* display: none; */
+    z-index: 5000;
+    top: 10px;
+    padding: 0;
+    /* background-color: white !important; */
+  }
+
+  .__presentacionMain {
+    position: relative;
+  }
+
+  .__presentacionMain > div {
+    width: auto;
+  }
+
+  .__newContainer {
+    display: none;
+  }
+
+  .datosLata {
+    order: 1;
+  }
+
+  .lata {
+    order: 0;
+  }
+
+  .__contentContainer img {
+    width: 100%;
+    /* display: none; */
+  }
+
+  .__presentacionLataContainer {
+    flex-direction: column;
+  }
+
+  .__infomain {
+    display: flex !important;
+    margin-top: -50px;
+    /* background-color: chocolate; */
+  }
+  .ceraDepilatoria {
+    /* background-color: darkblue; */
+    margin: 0 25px;
+    z-index: 100;
+  }
+
+  .__presentacionMain h1 {
+    letter-spacing: normal;
+    margin: 0;
+    line-height: 45px;
+    /* background-color: darkgoldenrod; */
+  }
+
+  .__presentacionMain p {
+    letter-spacing: normal;
+    margin: 0;
+  }
+
+  .__buttonsMain {
+    /* margin-top: 25px; */
+    /* background-color: darkgreen; */
+  }
+
+  .__enviosPais {
+    /* background-color: darkorange; */
+    margin-top: 15px;
+  }
+
+  .__lataContainer {
+    position: absolute;
+    right: -435px;
+    transform: rotate(20deg);
+    z-index: 10;
+  }
+
+  .__lataContainer img {
+    max-width: 700px;
+  }
+
+  /* ===== LATAS ============ */
+  /* ===== LATAS ============ */
+  /* ===== LATAS ============ */
+
+  .__contentContainer {
+    text-align: justify;
+    /* background-color: brown; */
+  }
+
+  .__contentContainer > div {
+    max-width: 95%;
+  }
+  .__presentacionLataContainer h5 {
+    font-size: 16px;
+    text-align: center;
+
+    /* background-color: blue; */
+  }
+
+  .__presentacionLataContainer p {
+    font-size: 14px;
+  }
+
+  table th {
+    font-size: 12px;
+  }
+}

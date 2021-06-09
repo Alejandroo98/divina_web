@@ -22,26 +22,27 @@ body {
 
 .__mainContainer {
   position: relative;
-  background-color: tomato;
   height: 100%;
   /* height: calc(100vh - 56px); */
   background: rgb(51, 51, 51);
   background: linear-gradient(0deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
   /* background-size: cover; */
+  /* background-color: brown; */
 }
 
 .__presentacionMain {
   display: flex;
+  /* background-color: burlywood; */
   justify-content: center;
   justify-items: center;
-  box-sizing: border-box;
-  /* background-color: violet; */
+  /* box-sizing: border-box; */
   height: 100%;
   overflow: hidden;
 }
 
 .__infomain {
   margin-top: -100px;
+  /* background-color: rgb(198, 248, 148); */
 }
 
 .__presentacionMain P {
@@ -62,7 +63,7 @@ body {
   margin-top: 8px;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   color: rgb(194, 194, 194);
 }
 
@@ -122,6 +123,7 @@ body {
 }
 
 .__buttonsMain {
+  /* background-color: crimson; */
   display: flex;
   margin-top: 35px;
   justify-content: center;
