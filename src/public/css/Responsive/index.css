@@ -50,7 +50,15 @@
   .ceraDepilatoria {
     /* background-color: darkblue; */
     margin: 0 25px;
-    z-index: 100;
+    z-index: 10000;
+  }
+
+  .animate__fadeIn {
+    z-index: 500 !important;
+  }
+
+  .animate__fadeInRight {
+    z-index: 9000 !important;
   }
 
   .__presentacionMain h1 {
@@ -78,8 +86,8 @@
   .__lataContainer {
     position: absolute;
     right: -435px;
-    transform: rotate(20deg);
-    z-index: 10;
+    /* transform: rotate(20deg) !important; */
+    z-index: 1 !important;
   }
 
   .__lataContainer img {
