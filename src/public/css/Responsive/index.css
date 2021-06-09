@@ -1,4 +1,4 @@
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1000px) {
   .navbar {
     /* display: none; */
     z-index: 5000;
@@ -27,6 +27,11 @@
     order: 0;
   }
 
+  .lata img {
+    /* background-color: chocolate; */
+    max-width: 400px;
+  }
+
   .__contentContainer img {
     width: 100%;
     /* display: none; */
@@ -39,6 +44,7 @@
   .__infomain {
     display: flex !important;
     margin-top: -50px;
+    min-width: auto;
     /* background-color: chocolate; */
   }
   .ceraDepilatoria {
