@@ -18,6 +18,7 @@ main {
   align-items: center;
   background-color: rgb(255, 203, 203);
   height: 100vh;
+  padding: 0 10px;
 }
 
 form {
