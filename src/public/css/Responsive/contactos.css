@@ -1,0 +1,41 @@
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .__contentContainer {
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+
+  .__contentContainer {
+    /* margin: 0 0 100px 0; */
+  }
+
+  .footer {
+    margin-bottom: -95px !important;
+    /* display: none !important; */
+  }
+
+  .inputsForm {
+    order: 1;
+  }
+
+  .nameForm {
+    order: 0;
+    padding: 10px 0;
+  }
+
+  .nameForm h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .nameForm p {
+    margin: 0;
+  }
+
+  .br {
+    display: none;
+  }
+}

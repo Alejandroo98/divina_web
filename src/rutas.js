@@ -10,6 +10,8 @@ const Email = require('./models/email');
 /* RUTA DE LOS VIEWS */
 app.set('views', path.resolve(__dirname, 'public'));
 
+/* UNDIFINED */
+
 /* INDEX */
 app.get('/', (req, res) => {
   res.render('index.hbs');
@@ -109,6 +111,10 @@ app.get('/logout', (req, res) => {
   req.session.destroy(function (err) {
     res.redirect('/admin/login');
   });
+});
+
+app.get('/*', (req, res) => {
+  res.redirect('/');
 });
 
 module.exports = app;

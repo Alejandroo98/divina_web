@@ -6,6 +6,8 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 const hbs = require('hbs');
+// const http = require('http');
+// const server = http.createServer(app);
 
 require('./config/config');
 
@@ -43,11 +45,11 @@ app.use((req, res, next) => {
   next();
 });
 
-//RUTAS
-app.use(require('./rutas'));
-
 //ARCHIVOS ESTATICOS
 app.use(express.static(path.resolve(__dirname, './public')));
+
+//RUTAS
+app.use(require('./rutas'));
 
 //DB
 mg.connect(process.env.URLDB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err, res) => {

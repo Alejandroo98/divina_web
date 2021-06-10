@@ -21,7 +21,7 @@
 .__contentContainer {
   display: flex;
   width: 800px;
-  height: 450px;
+  /* height: 450px; */
   box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
