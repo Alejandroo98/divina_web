@@ -1,6 +1,4 @@
 nav {
-  display: flex;
-  justify-content: space-between;
   background-color: rgb(255, 95, 95);
   padding: 10px 30px;
   margin-bottom: 50px;
@@ -17,67 +15,35 @@ nav a:hover {
 
 .flexNav {
   display: flex;
-}
-
-.flexNav > div {
-  margin: 0 25px;
+  justify-content: space-between;
 }
 
 .__mainMails {
   display: flex;
-  /* background-color: tomato; */
   justify-content: center;
 }
 
-.__tableEmails {
-  margin: 10px;
-  /* background-color: teal; */
-  /* width: 900px; */
+.flexEmail {
+  max-width: 2000px;
+  width: 100%;
 }
 
-.nameEmails {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 300px));
-  background-color: rgb(255, 95, 95);
-  justify-content: space-around;
+table {
+  min-width: 750px;
+  width: 100%;
   text-align: center;
-  color: white;
+  background-color: rgba(5, 204, 204, 0.075);
 }
 
-.nameEmails > div {
-  /* background-color: yellow; */
+td {
+  word-wrap: break-word;
 }
 
-.nameEmails p {
-  margin: 0;
-}
-
-.flexEmail a {
-  border: navajowhite;
-  text-decoration: none;
-  background-color: rgb(248, 114, 114);
-  color: white;
-  padding: 5px 15px;
-  border-radius: 8px;
+table a {
+  word-wrap: inherit;
+  white-space: nowrap;
 }
 
 .conentEmails {
-}
-
-.flexEmail {
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(5, minmax(100px, 300px));
-  align-items: center;
-  border-bottom: 1px solid rgb(172, 172, 172);
-  padding: 13px;
-}
-
-.flexEmail > div {
-  overflow-y: auto;
-  padding: 5px 0;
-}
-
-.mensajeEmail {
-  max-width: 300px;
+  max-width: 80%;
 }

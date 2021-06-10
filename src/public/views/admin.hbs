@@ -11,64 +11,60 @@
       crossorigin='anonymous'
     />
     <link rel='stylesheet' href='../css/admin.css' />
+    <link rel='stylesheet' href='../css/Responsive/admin.css' />
   </head>
   <body>
 
     <nav>
       <div class='flexNav'>
+
         <div>
           <a href='/'>
             <img src='../img/logo_Mesa de trabajo 1.svg' width='100' alt='Logo-Divina' />
           </a>
         </div>
+
         <div>
-          <a href='/'>Home</a>
+          <a href='/logout'>Cerrar Sesion</a>
         </div>
-        <div>
-          <a href='/contactos'>Contactos</a>
-        </div>
+
       </div>
-      <div>
-        <a href='/logout'>Cerrar Sesion</a>
-      </div>
+
     </nav>
 
     <main class='__mainMails'>
-      <section class='__tableEmails'>
-        <div class='nameEmails'>
-          <div>
-            <p>
-              Nombres
-            </p>
-          </div>
-          <div>
-            <p>
-              Emails
-            </p>
-          </div>
-          <div>
-            <p>
-              Mensaje
-            </p>
-          </div>
-          <div>
-            <p>
-              Hora envio
-            </p>
-          </div>
-        </div>
-        <div class='conentEmails'>
-          {{#each emails}}
-            <div class='flexEmail'>
-              <div>{{nombres}}</div>
-              <div>{{email}}</div>
-              <div class='mensajeEmail'>{{mensaje}}</div>
-              <div> {{fechaMensaje}} </div>
-              <div><a href='/delete/{{_id}}'>Eliminar Email</a></div>
+
+      <div class='conentEmails'>
+        {{#each emails}}
+          <div class='flexEmail'>
+
+            <div class='table-responsive-lg'>
+              <table class='table table-bordered'>
+                <thead class='table-info'>
+                  <tr>
+                    <th>Nombres</th>
+                    <th>Email</th>
+                    <th>Mensaje</th>
+                    <th>Fecha|Hora</th>
+                    <th>Btn</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{nombres}}</td>
+                    <td>{{email}}</td>
+                    <td>{{mensaje}}</td>
+                    <td>{{fechaMensaje}}</td>
+                    <td><a class='btn btn-danger' href='/delete/{{_id}}'>Eliminar Email</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          {{/each}}
-        </div>
-      </section>
+
+          </div>
+        {{/each}}
+      </div>
+
     </main>
 
   </body>
