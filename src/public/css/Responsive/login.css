@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
   form {
-    width: 300px;
+    width: 300px !important;
     /* width: 100%; */
   }
 }
