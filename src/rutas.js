@@ -6,6 +6,7 @@ const passport = require('passport');
 const { isNotLoggedIn, isLoggedIn } = require('./lib/auth');
 const { encryptPassword } = require('./lib/helpers');
 const Email = require('./models/email');
+const fs = require('fs');
 
 /* RUTA DE LOS VIEWS */
 app.set('views', path.resolve(__dirname, 'public'));
@@ -112,6 +113,12 @@ app.get('/logout', (req, res) => {
     res.redirect('/admin/login');
   });
 });
+
+/* TERMINOS Y CONDCIONES */
+app.get('/term', (req, res) => {
+    res.render('views/tyc');
+});
+
 
 app.get('/*', (req, res) => {
   res.redirect('/');
