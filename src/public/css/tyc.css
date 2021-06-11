@@ -9,6 +9,7 @@ body {
 img {
     max-width: 200px;
     margin: 30px 0;
+    
 }
 
 h1 {
@@ -25,3 +26,4 @@ main {
 p {
     text-align: justify;
 }
+

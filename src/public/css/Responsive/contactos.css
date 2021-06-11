@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
   .navbar {
-    padding: 10px 0;
+    padding: 10px;
+
   }
 
   .__contentContainer {

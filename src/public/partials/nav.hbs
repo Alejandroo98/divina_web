@@ -1,15 +1,22 @@
 <nav class='navbar navbar-dark navbar-expand-lg'>
+  <style>
+    @media screen and (max-width : 1000px) {
+      .ecuador {
+        top: 12px;
+        right: -84px !important;
+      }
+    }
+  </style>
+
   <div class='container-fluid'>
-    <a class='navbar-brand' href='/'> <img src='../img/logo_Mesa de trabajo 1.svg' width='120' alt='' /> </a>
-    <button
-      class='navbar-toggler'
-      type='button'
-      data-bs-toggle='collapse'
-      data-bs-target='#navbarSupportedContent'
-      aria-controls='navbarSupportedContent'
-      aria-expanded='false'
-      aria-label='Toggle navigation'
-    >
+    <a class='navbar-brand' style="position: relative !important;" href='/'> <img
+        src='../img/logo_Mesa de trabajo 1.svg' width='120' alt='' />
+      <p class="ecuador" style="position: absolute; bottom:-28px; color : white; right: 22px; font-size : 15px;">Ecuador
+        <img src="../img/ec.png" width="15" alt="Bandera de Ecuador">
+      </p>
+    </a>
+    <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent'
+      aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
       <span class='navbar-toggler-icon'></span>
     </button>
     <div class='collapse navbar-collapse' id='navbarSupportedContent'>
