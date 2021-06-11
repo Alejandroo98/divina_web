@@ -1,10 +1,29 @@
 @media screen and (max-width: 1000px) {
+  .negro {
+    display: block;
+  }
+  .rojo {
+    display: block;
+  }
+  .verde {
+    display: block;
+  }
+
+  .datosLata h5 {
+    display: none;
+  }
+
   .navbar {
     /* display: none; */
     z-index: 5000;
     top: 10px;
     padding: 0;
     /* background-color: white !important; */
+  }
+
+  .datosLata {
+    width: auto;
+    padding: 0 10px;
   }
 
   .__presentacionMain {
