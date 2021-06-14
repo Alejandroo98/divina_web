@@ -139,4 +139,26 @@
   table th {
     font-size: 12px;
   }
+
+  /* ======== PUNTOS DE VENTA ======= */
+  .puntosDeVentaMaps iframe{
+  width:100%;
+  height: 100% ;
+}
+
+.Depilstudio::after {
+  bottom: -20px;
+}
+
+.Depilcenter::after {
+  bottom: -29px;
+
+}
+
+
+.puntosDeVenta {
+  margin-bottom: 5px;
+}
+
+  
 }
