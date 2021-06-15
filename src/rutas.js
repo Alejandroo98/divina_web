@@ -26,7 +26,7 @@ app.get('/contactos', (req, res) => {
 app.post('/contactos', (req, res) => {
   const { nombres, email, mensaje } = JSON.parse(JSON.stringify(req.body));
   const date = new Date();
-  const fechaMensaje = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} | ${date.getHours()}:${date.getMinutes()}`;
+  const fechaMensaje = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
 
   if (nombres === '' || email === '' || mensaje === '') {
     req.flash('err', 'Llena todos los campos');
