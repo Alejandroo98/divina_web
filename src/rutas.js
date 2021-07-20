@@ -116,9 +116,8 @@ app.get('/logout', (req, res) => {
 
 /* TERMINOS Y CONDCIONES */
 app.get('/term', (req, res) => {
-    res.render('views/tyc');
+  res.render('views/tyc');
 });
-
 
 app.get('/*', (req, res) => {
   res.redirect('/');
