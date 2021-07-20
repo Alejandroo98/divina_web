@@ -19,6 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 // PARE APLLICATION/JSON
 app.use(express.json());
 
+
+
+
 //FLASH
 app.use(
   session({
